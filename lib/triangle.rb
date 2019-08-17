@@ -13,7 +13,7 @@ class Triangle
     if (s1 + s2) < s3 || (s1 + s3) < s2 || (s2 + s3) < s1
       raise TriangleError
     else
-      if s1 == s2 == s3
+      if s1 == s2 && s2 == s3
         return :equilateral
       elsif s1 == s2 || s1 == s3 || s2 == s3
         return :isosceles
